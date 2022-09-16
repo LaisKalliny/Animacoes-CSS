@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+@keyframes rotacao {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(45deg);}
+}
+.quadrado{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    background-color: rgb(64, 122, 173);
+    animation-name: rotacao;
+    animation-duration: 3s;
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.quadrado1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: mover 5s;
+}
+.quadrado2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    animation-name: mover;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+.quadrado3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    animation-name: mover;
+    animation-delay: 4s;
+    animation-duration: 5s;
+}
+@keyframes mover {
+    0% {left: 0px; bottom: 0px;}
+    50% {left: 0px; bottom: 200px;}
+    100% {left: 0px; bottom: 0px;}
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

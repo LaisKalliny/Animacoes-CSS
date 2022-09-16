@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: descer;
+    animation-duration: 10s;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: solid #000;
+    border-radius: 15px;
+    padding: 50px;
+    margin-top: 20px;
+}
+.form input, button{
+    margin-bottom: 10px;
+}
+@keyframes descer {
+    from {bottom: 550px;}
+    to {bottom: 0px;}
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

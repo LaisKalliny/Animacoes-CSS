@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.circulo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    animation: pulsar 2s infinite;
+}
+@keyframes pulsar {
+    from {box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2)}
+    to {box-shadow: 0 0 0 20px rgba(0, 0, 0, 0)}
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

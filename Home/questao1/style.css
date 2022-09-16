@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.quadrado{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

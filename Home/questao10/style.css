@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.imagem{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    position: relative;
+    animation-name: mover;
+    animation-duration: 5s;
+}
+@keyframes mover {
+    0% {left:0px; top:0px; width: 200px; height: 200px;}
+    50% {left:-45%; top:-38%; width: 120px; height: 120px;}
+    100% {left:0px; top:0px; width: 70px; height: 70px;}
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

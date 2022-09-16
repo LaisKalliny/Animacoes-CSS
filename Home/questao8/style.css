@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.circulo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: pulsar;
+    animation-duration: 9s;
+}
+@keyframes pulsar {
+    0% {transform: scale(0.90); box-shadow: 0 0 0 0;}
+    20% {transform: scale(1); box-shadow: 0 0 0 10px;}
+    40% {transform: scale(0.90); box-shadow: 0 0 0 0;}
+    60% {transform: scale(1); box-shadow: 0 0 0 10px;}
+    80% {transform: scale(0.90); box-shadow: 0 0 0 0}
+    100% {transform: scale(1); box-shadow: 0 0 0 10px;}
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}

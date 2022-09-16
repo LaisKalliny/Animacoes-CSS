@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+@keyframes deslocar {
+    from {left: 0px; top: 0px;}
+    to {left: 500px; top: 0px;}
+}
+.circulo{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: brown;
+    animation-name: deslocar;
+    animation-duration: 5s;
+}
+.botoes{
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+}
+.botoes a{
+    text-decoration: none;
+}
